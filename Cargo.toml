@@ -21,13 +21,15 @@ default = []
 vulkan-portability = ["core/gfx-backend-vulkan"]
 
 [dependencies.core]
-path = "../wgpu-core"
 package = "wgpu-core"
+#path = "../wgpu-core"
+git = "https://github.com/gfx-rs/wgpu"
 version = "0.5"
 
 [dependencies.wgt]
-path = "../wgpu-types"
 package = "wgpu-types"
+#path = "../wgpu-types"
+git = "https://github.com/gfx-rs/wgpu"
 version = "0.5"
 
 [dependencies]
